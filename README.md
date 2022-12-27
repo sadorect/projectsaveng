@@ -9,6 +9,5 @@ This repository contains projectsave webfiles
 ## Contents
 
 * All images are in the css/images folder
-* All Frontend files are pushed to frontend branch 
-
+* This repo contains three branch, Main for Production, Frontend for frontend files, Backend for backend files
 
