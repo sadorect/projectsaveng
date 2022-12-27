@@ -1,5 +1,5 @@
 /* FONT IMPORT */
-@import url('https://fonts.googleapis.com/css2?family=Ubuntu:=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Ubuntu:=swap'); */
 
 /* CSS RESET */
 
@@ -12,7 +12,7 @@
 
 html {
     scroll-behavior: smooth;
-    font-family: var(--FF);
+    /* font-family: var(--FF); */
 }
 
 /* Images Reset */
@@ -32,27 +32,61 @@ input, button, textarea {
 /* VARIABLES */
 :root{
     /* FONTS */
-    --FF: 'Ubuntu',sans-serif;
+    /* --FF: 'Ubuntu',sans-serif; */
     --FS: clamp(1rem, 2.2vh, 1.5rem);
 
     /* COLORS */
     --PRIMARY-COLOR: #2F004E;
     --ACCENT-COLOR: #B550F8;
+    --ACCENT_COLOR2: #DAA8FC;
     --NEUTRAL-COLOR: #fff;
+    --BORDER-COLOR: #3A3C56;
 }
 
 /* GENERAL STYLES */
 .container {
-    padding: 20px;
-}
-
-.container--column{
+    padding: 120px;
     display: flex;
+    justify-content: center;
     align-items: center;
 }
 
+
+.container figure img{
+    padding: 10px 120px;
+    display: flex;
+    justify-content: center;
+}
+
+.container:nth-child(4){
+    gap: 4rem;
+}
+
+.container p{
+    color: var(--ACCENT-COLOR);
+    padding-top: 10px;
+    padding-bottom: 10px;
+    line-height: 2;
+}
+
+.container h1 {
+    font-size: 4rem;
+    font-weight: 700;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: var(--PRIMARY-COLOR);
+}
+
+.container h4 {
+    font-size: 2rem;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: var(--PRIMARY-COLOR);
+}
+
+
 .primary--button {
-    padding: 15px 40px;
+    padding: 15px 60px;
     border-radius: 10px;
     background-color: var(--PRIMARY-COLOR);
     color: var(--NEUTRAL-COLOR);
@@ -62,23 +96,24 @@ input, button, textarea {
 }
 
 .accent--button {
-        padding: 15px 40px;
-        border-radius: 10px;
-        background-color: transparent;
-        color: var(--ACCENT-COLOR);
-        border: 1px solid var(--ACCENT-COLOR);
-        display: block;
-        font-weight: 700;
+    padding: 15px 60px;
+    border-radius: 10px;
+    background-color: transparent;
+    color: var(--ACCENT-COLOR);
+    border: 1px solid var(--ACCENT-COLOR);
+    display: block;
+    font-weight: 700;
 }
 
 .accent--button2 {
-    padding: 15px 40px;
+    padding: 15px 60px;
     border-radius: 10px;
     background-color: var(--ACCENT-COLOR);
     color: var(--NEUTRAL-COLOR);
     border: none;
     display: block;
     font-weight: 700;
+    margin-top: 30px;
 }
 /* END OF GENERAL STYLES */
 
@@ -153,4 +188,166 @@ header{
     display: flex;
     margin: 90px auto;
     gap: 2rem;
+}
+
+.statistics {
+    display: flex;
+    justify-content: center;
+}
+
+.statistics div {
+    border: 1px solid var(--ACCENT-COLOR);
+    padding: 20px 260px 20px 30px;
+    
+}
+
+.statistics div:first-child {
+    border-radius: 20px 0 0 20px;
+}
+
+.statistics div:nth-child(2){
+    background-color: var(--ACCENT_COLOR2);
+}
+
+.statistics div:last-child {
+    border-radius: 0 20px 20px 0;
+}
+
+
+.core-focus {
+    display: block;
+    padding: 120px;
+}
+
+.core-focus h1 {
+    display: flex;
+    justify-content: center;
+    padding: 80px;
+    font-size: 4rem;
+    font-weight: 700;
+    color: var(--PRIMARY-COLOR);
+}
+
+.focus--section {
+    display: flex;
+}
+
+.focus--section div {
+    border: 1px solid var(--ACCENT-COLOR);
+    padding: 130px 60px;
+}
+
+.focus--section div:first-child {
+    border-radius: 20px 0 0 20px;
+}
+
+.focus--section div:last-child {
+    border-radius: 0 20px 20px 0;
+}
+
+.focus--section figure img {
+    background-color: var(--ACCENT-COLOR);
+    padding: 30px;
+    margin: 40px 10px;
+    width: 100px;
+    border-radius: 50px;
+}
+
+.focus--section h4 {
+    font-size: 2rem;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: var(--PRIMARY-COLOR);
+}
+
+.focus--section p {
+    color: var(--ACCENT-COLOR);
+    padding-top: 10px;
+    padding-bottom: 10px;
+    line-height: 2;
+}
+
+.focus--section h1 {
+    font-size: 4rem;
+    font-weight: 700;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: var(--PRIMARY-COLOR);
+}
+
+.events {
+    padding: 100px;
+    background-color: var(--PRIMARY-COLOR);
+}
+
+.events p {
+    padding: 10px 0;
+    color: var(--ACCENT-COLOR);
+}
+
+.events__p {
+    padding: 190px 0px 0px 0px;
+    color: var(--ACCENT-COLOR);
+    display: flex;
+    justify-content: center;
+}
+
+.events h1 {
+    padding: 10px 0px;
+    color: var(--NEUTRAL-COLOR);
+    font-size: 3rem;
+}
+
+.events__h1 {
+    padding: 10px 0px;
+    color: var(--NEUTRAL-COLOR);
+    font-size: 3rem;
+    display: flex;
+    justify-content: center;
+}
+.events h5 {
+    color: var(--ACCENT_COLOR2);
+    font-size: 1.5rem;
+    padding: 20px 0;
+}
+
+.events button {
+    margin: 200px auto;
+    display: flex;
+    justify-content: center;
+}
+
+.event--card  {
+    display: flex;
+    gap: 6rem;
+}
+
+.event--card div {
+    margin-top: 60px;
+    padding: 60px;
+    border: 1px solid var(--BORDER-COLOR);
+    border-radius: 10px;
+}
+
+.team {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.team-card figure {
+    border: 1px solid var(--BORDER-COLOR);
+    padding: 20px 20px 0 20px;
+    width: 70%;
+    border-radius: 10px;
+}
+
+.team-card h3 {
+    color: var(--NEUTRAL-COLOR);
+    padding:  20px 0 0 20px;
+}
+
+.team-card p{
+    color: var(--NEUTRAL-COLOR);
+    padding: 10px 0 0 20px;
 }
