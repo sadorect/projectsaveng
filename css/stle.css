@@ -10,7 +10,10 @@
     box-sizing: border-box;
 }
 
-html {scroll-behavior: smooth;}
+html {
+    scroll-behavior: smooth;
+    font-family: var(--FF);
+}
 
 /* Images Reset */
 img {
@@ -48,6 +51,35 @@ input, button, textarea {
     align-items: center;
 }
 
+.primary--button {
+    padding: 15px 40px;
+    border-radius: 10px;
+    background-color: var(--PRIMARY-COLOR);
+    color: var(--NEUTRAL-COLOR);
+    border: 0px;
+    display: block;
+    font-weight: 700;
+}
+
+.accent--button {
+        padding: 15px 40px;
+        border-radius: 10px;
+        background-color: transparent;
+        color: var(--ACCENT-COLOR);
+        border: 1px solid var(--ACCENT-COLOR);
+        display: block;
+        font-weight: 700;
+}
+
+.accent--button2 {
+    padding: 15px 40px;
+    border-radius: 10px;
+    background-color: var(--ACCENT-COLOR);
+    color: var(--NEUTRAL-COLOR);
+    border: none;
+    display: block;
+    font-weight: 700;
+}
 /* END OF GENERAL STYLES */
 
 /* Styles */
@@ -58,9 +90,9 @@ header{
 }
 
 .header__nav {
-    margin: 40px;
+    margin: 70px 40px;
     display: flex;
-    padding: 30px;
+    padding: 30px 90px;
     justify-content: space-between;
     gap: 1rem;
     background-image: radial-gradient(rgba(255, 255, 255, 0), #ffffff49);
@@ -70,7 +102,6 @@ header{
 }
 
 .header__h1 {
-    font-family: var(--FF);
     font-weight: bolder;
     color: var(--NEUTRAL-COLOR);
 }
@@ -91,7 +122,35 @@ header{
     color: var(--NEUTRAL-COLOR);
 }
 
-main {
-    background-color: var(--PRIMARY-COLOR);
+.header_ul li:hover {
+    cursor: pointer;
+    background-color: var(--ACCENT-COLOR);
+}
+
+.hero {
+    background-image: url(./images/unsplash_6liebVeAfrY.png), linear-gradient(to bottom, var(--PRIMARY-COLOR), rgba(255, 255, 255, 0.048));
+    background-size: cover;
     min-height: 100vh;
+    color: var(--NEUTRAL-COLOR);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero__h1{
+    font-size: 6rem;
+    text-align: center;
+    padding: 20px 280px;
+    margin-top: 200px;
+}
+
+.hero__p {
+    font-size: large;
+}
+
+.hero__buttons {
+    display: flex;
+    margin: 90px auto;
+    gap: 2rem;
 }
