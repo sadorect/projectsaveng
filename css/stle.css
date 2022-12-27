@@ -1,0 +1,97 @@
+/* FONT IMPORT */
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:=swap');
+
+/* CSS RESET */
+
+/* Document Reset */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {scroll-behavior: smooth;}
+
+/* Images Reset */
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+/* Form Reset */
+input, button, textarea {
+    font: inherit; 
+}
+
+/* END OF CSS RESET */
+
+/* VARIABLES */
+:root{
+    /* FONTS */
+    --FF: 'Ubuntu',sans-serif;
+    --FS: clamp(1rem, 2.2vh, 1.5rem);
+
+    /* COLORS */
+    --PRIMARY-COLOR: #2F004E;
+    --ACCENT-COLOR: #B550F8;
+    --NEUTRAL-COLOR: #fff;
+}
+
+/* GENERAL STYLES */
+.container {
+    padding: 20px;
+}
+
+.container--column{
+    display: flex;
+    align-items: center;
+}
+
+/* END OF GENERAL STYLES */
+
+/* Styles */
+
+header{
+    display: flex;
+    justify-content: center;
+}
+
+.header__nav {
+    margin: 40px;
+    display: flex;
+    padding: 30px;
+    justify-content: space-between;
+    gap: 1rem;
+    background-image: radial-gradient(rgba(255, 255, 255, 0), #ffffff49);
+    position: fixed;
+    border-radius: 30px;
+    width: 90%;
+}
+
+.header__h1 {
+    font-family: var(--FF);
+    font-weight: bolder;
+    color: var(--NEUTRAL-COLOR);
+}
+
+.header__ul{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.header__ul li {
+    margin: auto 20px;
+    font-family: var(--FF);
+    list-style-type: none;
+}
+
+.header__ul li a{
+    text-decoration: none;
+    color: var(--NEUTRAL-COLOR);
+}
+
+main {
+    background-color: var(--PRIMARY-COLOR);
+    min-height: 100vh;
+}
