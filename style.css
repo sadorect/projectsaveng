@@ -1,0 +1,21 @@
+/* FONT IMPORT */
+
+
+/* DOCUMENT RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {scroll-behavior: smooth; }
+
+
+/* CSS VARIABLES */
+:root {
+    --ff: 
+
+    --fs-Secondary-Heading: ; 
+    --fs-Primary-Heading: ; 
+    --fs-Paragraph: ;
+}
