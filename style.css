@@ -1,5 +1,5 @@
 /* FONT IMPORT */
-
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:&display=swap');
 
 /* DOCUMENT RESET */
 * {
@@ -8,14 +8,28 @@
     box-sizing: border-box;
 }
 
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+input, button, textarea {
+    font: inherit;
+}
+
 html {scroll-behavior: smooth; }
 
 
 /* CSS VARIABLES */
 :root {
-    --ff: 
+    --ff: 'Ubuntu', sans-serif;
 
-    --fs-Secondary-Heading: ; 
-    --fs-Primary-Heading: ; 
-    --fs-Paragraph: ;
+    --fs-Secondary-Heading: clamp(2rem, 4vw, 4rem); 
+    --fs-Primary-Heading: clamp(1rem, 3vw, 3rem); 
+    --fs-Paragraph: clamp(0.8rem, 2vw, 2rem);
+
+    --clr-secondary: #2F004E;
+    --clr-primary-400: #B550F8;
+    --clr-primary-200: #DAA8FC;
 }
