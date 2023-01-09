@@ -39,4 +39,11 @@ html {scroll-behavior: smooth; }
 
 .container {
     width: min(500px, 70%);
+    display: grid;
+    padding: 4rem, 2rem;
+    margin-inline: auto;
+}
+
+.padding-buttom {
+    padding-bottom: 1rem;
 }
