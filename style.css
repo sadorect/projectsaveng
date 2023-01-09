@@ -33,3 +33,10 @@ html {scroll-behavior: smooth; }
     --clr-primary-400: #B550F8;
     --clr-primary-200: #DAA8FC;
 }
+
+
+/* UTILITY CLASSES */
+
+.container {
+    width: min(500px, 70%);
+}
