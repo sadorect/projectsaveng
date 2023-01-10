@@ -60,7 +60,10 @@ html {
 nav {
     width: max(500px, 70%);
     display: flex;
+    justify-content: space-between;
+    padding: 1rem;
     margin-inline: auto;
+    color: var(--clr-neutral);
 }
 
 .hamburger {
@@ -75,6 +78,30 @@ nav {
     border-radius: 5px;
     background-color: var(--clr-neutral);
 }
+
+.menu {
+    position: absolute;
+    top: 60px;
+    left: 0;
+    background-color: var(--clr-secondary);
+    width: 100vw;
+    height: 300px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.menu li {
+    list-style: none;
+}
+
+.menu a {
+    color: var(--clr-neutral);
+    text-decoration: none;
+}
+
+
 
 
 @media (min-width:50em) {
@@ -92,10 +119,15 @@ nav {
 
     .menu {
         display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        position: relative;
+        top: 0;
+        height: 15px;
     }
 
     .menu li {
-        margin-inline: 2rem;
+        margin-inline: 1rem;
         list-style: none;
     }
 
