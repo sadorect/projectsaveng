@@ -18,7 +18,10 @@ input, button, textarea {
     font: inherit;
 }
 
-html {scroll-behavior: smooth; }
+html {
+    scroll-behavior: smooth; 
+    font-family: var(--ff);
+}
 
 
 /* CSS VARIABLES */
@@ -32,6 +35,7 @@ html {scroll-behavior: smooth; }
     --clr-secondary: #2F004E;
     --clr-primary-400: #B550F8;
     --clr-primary-200: #DAA8FC;
+    --clr-neutral: #fff;
 }
 
 
@@ -46,4 +50,65 @@ html {scroll-behavior: smooth; }
 
 .padding-buttom {
     padding-bottom: 1rem;
+}
+
+
+.header__nav {
+    background-color: #2F004E;
+}
+
+nav {
+    width: max(500px, 70%);
+    display: flex;
+    margin-inline: auto;
+}
+
+.hamburger {
+    display: block;
+    cursor: pointer;
+}
+
+.hamburger .line {
+    width: 30px;
+    height: 5px;
+    margin-block: 4px;
+    border-radius: 5px;
+    background-color: var(--clr-neutral);
+}
+
+
+@media (min-width:50em) {
+    .hamburger {
+        display: none;
+    }
+
+    nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 70px;
+        color: var(--clr-neutral);
+    }
+
+    .menu {
+        display: flex;
+    }
+
+    .menu li {
+        margin-inline: 2rem;
+        list-style: none;
+    }
+
+    .menu a {
+        color: var(--clr-neutral);
+        text-decoration: none;
+    }
+
+    .menu a:hover {
+        background-color: var(--clr-neutral);
+        color: var(--clr-primary-400);
+        padding: 2rem;
+        transition: 0.4s;
+    }
+
 }
