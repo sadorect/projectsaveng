@@ -30,6 +30,7 @@ html {
 
     --fs-Primary-Heading: clamp(2rem, 6vw, 6rem); 
     --fs-Secondary-Heading: clamp(2rem, 5vw, 4rem); 
+    --fs-Secondary-Heading-2: clamp(1.5rem, 5vw, 3rem); 
     --fs-Paragraph: clamp(1rem, 2vw, 1.4rem);
 
     --clr-Primary: #2F004E;
@@ -48,10 +49,15 @@ h3 {
     font-size: var(--fs-Secondary-Heading);
     color: var(--clr-Primary);
 }
+h4 {
+    font-size: var(--fs-Secondary-Heading-2);
+    color: var(--clr-Primary);
+}
 
 p {
     font-size: var(--fs-Paragraph);
     color: var(--clr-secondary-400);
+    line-height: 1.5;
 }
 
 .container {
@@ -60,6 +66,14 @@ p {
     padding: 3rem 0.5rem;
     margin-inline: auto;
     gap: 3rem;
+}
+
+.icons {
+    width: 80px;
+    height: auto;
+    background-color: var(--clr-secondary-400);
+    padding: 25px;
+    border-radius: 50px;
 }
 
 .padding-block {
@@ -215,6 +229,16 @@ nav {
     border-radius: 0px 10px 10px 0px;
 }
 
+.features {
+    display: flex;
+}
+
+
+.features-card {
+    border: 1px solid var(--clr-secondary-400);
+    padding: 3rem;
+    border-radius: 10px;
+}
 
 
 
