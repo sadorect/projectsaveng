@@ -231,6 +231,7 @@ nav {
 
 .features {
     display: flex;
+    flex-direction: column;
 }
 
 
@@ -238,6 +239,15 @@ nav {
     border: 1px solid var(--clr-secondary-400);
     padding: 3rem;
     border-radius: 10px;
+}
+
+.focus {
+    width: min(1400px, 80%);
+    display: grid;
+    padding: 3rem 0.5rem;
+    margin-inline: auto;
+    gap: 3rem;
+    justify-items: center;
 }
 
 
@@ -315,6 +325,18 @@ nav {
     .statistics {
         display: flex;
         justify-content: center;
+    }
+
+    .features {
+        flex-direction: row;
+    }
+
+
+    .focus-2 {
+        width: min(1800, 80%);
+        display: flex;
+        align-items: center;
+        padding: 3rem;
     }
 
 }
