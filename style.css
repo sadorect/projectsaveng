@@ -279,6 +279,7 @@ nav {
 
 
 
+
 @media (min-width:70em) {
     .hamburger {
         display: none;
@@ -376,6 +377,10 @@ nav {
         display: grid;
         grid-auto-flow: column;
         grid-auto-columns: 1fr;
+    }
+
+    .blog-layout {
+        display: flex;
     }
 
 }
