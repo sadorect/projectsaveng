@@ -623,4 +623,12 @@ nav {
         "post1 post1 post4 post5"
         ;
     }
+
+
+    /* BLOG PAGE  */
+
+    .blog-page {
+        display: flex;
+        gap: 3rem;
+    }
 }
