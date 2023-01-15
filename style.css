@@ -349,6 +349,8 @@ nav {
 }
 
 
+
+
 /* CONTACT SECTION */
 
 .contact-section {
@@ -425,6 +427,27 @@ nav {
 
 .blog-text {
     padding: 1rem;
+}
+
+.blog-page {
+    display: flex;
+    gap: 2rem;
+    flex-direction: column;
+}
+
+
+
+.newsletter {
+    display: flex;
+    gap: 1rem;
+    flex-direction: column;
+}
+
+.newsletter input {
+    padding: 1rem;
+    width: 100%;
+    border-radius: 10px;
+    border: 1px solid var(--clr-Primary);
 }
 
 
@@ -625,10 +648,15 @@ nav {
     }
 
 
-    /* BLOG PAGE  */
+    /* BLOG */
 
     .blog-page {
-        display: flex;
-        gap: 3rem;
+        flex-direction: row;
+    }
+
+    .newsletter {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
     }
 }
