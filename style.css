@@ -457,6 +457,18 @@ nav {
     flex-direction: column;
 }
 
+.proj {
+    padding-inline: 20rem;
+    text-align: center;
+}
+
+.proj li {
+    list-style: none;
+    line-height: 2;
+    color: var(--clr-Primary);
+}
+
+
 
 
 
