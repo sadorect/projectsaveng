@@ -470,7 +470,7 @@ nav {
 
 .proj-pics {
     display: grid;
-    gap: 3rem;
+    gap: 2rem;
 }
 
 
@@ -688,7 +688,7 @@ nav {
 
 
     .proj-pics {
-        grid-template-areas: none
+        grid-template-areas: 
         "proj1 proj1 proj2 proj3"
         "proj1 proj1 proj4 proj5"
         ;
