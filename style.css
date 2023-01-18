@@ -349,6 +349,31 @@ nav {
 }
 
 
+.login {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-inline: auto;
+}
+
+.login-form {
+    border: 1px solid var(--clr-secondary-400);
+    padding: 2rem;
+    border-radius: 10px;
+}
+
+.login-form input {
+    padding: 1rem;
+    display: block;
+    border-radius: 10px;
+    border: 1px solid var(--clr-secondary-400);
+    margin-block: 1rem;
+    width: 100%;
+}
+
+
+
 
 
 /* CONTACT SECTION */
