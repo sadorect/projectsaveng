@@ -469,7 +469,8 @@ nav {
 }
 
 .proj-pics {
-    
+    display: grid;
+    gap: 3rem;
 }
 
 
@@ -683,5 +684,33 @@ nav {
 
     .portfolio-postss {
         flex-direction: row;
+    }
+
+
+    .proj-pics {
+        grid-template-areas: none
+        "proj1 proj1 proj2 proj3"
+        "proj1 proj1 proj4 proj5"
+        ;
+    }
+
+    .proj-pics div:nth-child(1) {
+        grid-area: proj1;
+    }
+
+    .proj-pics div:nth-child(2) {
+        grid-area: proj2;
+    }
+
+    .proj-pics div:nth-child(3) {
+        grid-area: proj3;
+    }
+
+    .proj-pics div:nth-child(4) {
+        grid-area: proj4;
+    }
+
+    .proj-pics div:nth-child(5) {
+        grid-area: proj5;
     }
 }
