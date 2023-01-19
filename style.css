@@ -574,7 +574,7 @@ nav {
     }
 
     .hero__buttons {
-        padding-top: 8rem;
+        padding-top: 4rem;
         display: flex;
         flex-direction: row;
         justify-content: center;
