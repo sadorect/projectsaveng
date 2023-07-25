@@ -17,12 +17,12 @@
           <a href="index.html" class="nav-item nav-link active"><i class="fa fa-tachometer-alt me-2"></i>Admin</a>
           <a href="index.html" class="nav-item nav-link active"><i class="fa fa-tachometer-alt me-2"></i>Settings</a>
           <a href="index.html" class="nav-item nav-link active"><i class="fa fa-tachometer-alt me-2"></i>Admin</a>
-          <a href="index.html" class="nav-item nav-link active"><i class="fa fa-tachometer-alt me-2"></i>Admin</a>
+         
           <div class="nav-item dropdown">
-              <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown"><i class="fa fa-laptop me-2"></i>Pages</a>
+              <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown"><i class="fa fa-laptop me-2"></i>Blogs</a>
               <div class="dropdown-menu bg-transparent border-0">
-                  <a href="button.html" class="dropdown-item">Buttons</a>
-                  <a href="typography.html" class="dropdown-item">Typography</a>
+                  <a href="{{route('admin.blog')}}" class="dropdown-item">All Post</a>
+                  <a href="{{route('admin.blog.create')}}" class="dropdown-item">Create Post</a>
                   <a href="element.html" class="dropdown-item">Other Elements</a>
               </div>
           </div>
